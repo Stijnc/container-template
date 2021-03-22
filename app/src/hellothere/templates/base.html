@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {% if title %}
+            <title>Stijn's container template - {%block title %}{% endblock %}</title>
+        {% else %}
+            <title>Stijn's container template</title>
+        {% endif %}    
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
+        <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet" />
+        <style>
+            body{
+                background-color: {{background_color}};
+                color: {{color}}
+            }
+        </style>
+    </head>
+    <body>
+        {%block content %}{% endblock %}
+        <footer>
+            <p>
+                Build with &hearts; by <a href="https://callebaut.io">Stijn Callebaut</a>
+            </p>
+            <p>
+                <a href="https://github.com/stijnc/container">View Source on GitHub</a>
+            </p>     
+        </footer>
+    </body>
+</html>

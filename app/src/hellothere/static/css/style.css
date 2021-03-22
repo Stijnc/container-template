@@ -1,0 +1,41 @@
+body {
+    font-family: 'Roboto', serif;
+}
+section {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+section img {
+    min-height: 200px;
+    height: auto;
+}
+section p {
+    font-size: 3em;
+    display: inline-block;
+    vertical-align: top;
+}
+p.error {
+    align-content: center;
+}
+footer {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+    width: 40%;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+footer p {
+    margin: 0.5em 0;
+    font-size: 0.8rem;
+    color: #fff;
+}
+footer a {
+    color:#fff;
+}
