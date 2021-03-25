@@ -11,8 +11,7 @@ section {
 }
 
 section img {
-  min-height: 200px;
-  height: auto;
+  height: 200px;
 }
 
 section p {
