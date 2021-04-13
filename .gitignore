@@ -2,6 +2,10 @@
 # Created by https://www.toptal.com/developers/gitignore/api/python,flask,venv,dotenv,vscode
 # Edit at https://www.toptal.com/developers/gitignore?templates=python,flask,venv,dotenv,vscode
 
+### secrets ###
+
+.secrets
+
 ### dotenv ###
 .env
 prod.env
