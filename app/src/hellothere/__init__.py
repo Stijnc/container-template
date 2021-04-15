@@ -5,8 +5,8 @@ from hellothere.config import Config
 def create_app(config_class=Config):
     app = Flask(__name__)
     app.config.from_object(Config)
-    from hellothere.health.routes import health
     from hellothere.errors.handlers import errors
+    from hellothere.health.routes import health
     from hellothere.main.routes import main
 
     app.register_blueprint(main)
